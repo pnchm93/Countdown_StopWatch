@@ -1,0 +1,55 @@
+.countdown-timer {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: slategrey;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  /* Rest of the CSS code for Stopwatch component */
+  
+  .countdown-timer__circle {
+    transform: rotate(-90deg);
+  }
+  
+  .countdown-timer__circle-background,
+  .countdown-timer__circle-progress {
+    fill: none;
+    stroke-width: 10;
+    r: 90;
+    cx: 100;
+    cy: 100;
+  }
+  
+  .countdown-timer__circle-background {
+    stroke: #def;
+  }
+  
+  .countdown-timer__circle-progress {
+    stroke: purple; 
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s linear; 
+     stroke-dasharray: 565.48;
+     stroke-dashoffset: 0;
+  }
+  
+  .countdown-timer__text {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
